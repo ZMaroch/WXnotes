@@ -1,0 +1,13 @@
+App({
+  http(url,that,arr){
+  wx.request({
+    url:url,
+    success:(res)=>{
+      console.log(res.data);
+      that.setData({
+        [arr]:res.data.data
+      })
+    }
+  })
+  },
+})

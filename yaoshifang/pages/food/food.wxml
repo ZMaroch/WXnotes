@@ -1,0 +1,75 @@
+<!--pages/food/food.wxml-->
+<view class="header">
+    <view class="location">
+        <navigator url="">{{location}}</navigator>
+    </view>
+    <navigator class="search" url="../search/search">
+    搜索你喜欢的
+    </navigator>
+</view>
+
+<view class="fenlei">
+    <view class="fenlei-item" wx:for="{{itemArr}}" wx:key="index">
+        <image src="{{item.imgUrl}}"></image>
+        <view>{{item.title}}</view>
+    </view>
+</view>
+
+<import src="../../templates/foodList/foodList"/>
+
+<block wx:for="{{listArr}}" wx:key="index">
+  <template is='foodList' data="{{...item}}"></template>
+</block>
+
+<view class="shop-info">
+    <view class="shop-img">
+        <image src="../../image/ic_购物车 (1).png"></image>
+    </view>
+    <view class="shop-text">
+        <view class="title">名字</view>
+        <view class="detail">描述</view>
+        <view class="other">
+            <view class="money">￥200</view>
+            <view class="num">2834人付款</view>          
+        </view>
+    </view>
+</view>
+<view class="shop-info">
+    <view class="shop-img">
+        <image src="../../image/ic_购物车 (1).png"></image>
+    </view>
+    <view class="shop-text">
+        <view class="title">名字</view>
+        <view class="detail">描述</view>
+        <view class="other">
+            <view class="money">￥200</view>
+            <view class="num">2834人付款</view>          
+        </view>
+    </view>
+</view>
+<view class="shop-info">
+    <view class="shop-img">
+        <image src="../../image/ic_购物车 (1).png"></image>
+    </view>
+    <view class="shop-text">
+        <view class="title">名字</view>
+        <view class="detail">描述</view>
+        <view class="other">
+            <view class="money">￥200</view>
+            <view class="num">2834人付款</view>          
+        </view>
+    </view>
+</view>
+<view class="shop-info">
+    <view class="shop-img">
+        <image src="../../image/ic_购物车 (1).png"></image>
+    </view>
+    <view class="shop-text">
+        <view class="title">名字</view>
+        <view class="detail">描述</view>
+        <view class="other">
+            <view class="money">￥200</view>
+            <view class="num">2834人付款</view>          
+        </view>
+    </view>
+</view>

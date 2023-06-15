@@ -1,0 +1,16 @@
+/* pages/indexDetail/indexDetail.wxss */
+view.title{
+  text-align:left;
+  font-size: 40rpx;
+}
+image{
+  width: 100%;
+}
+
+view.text{
+  text-align: justify;
+  font-size: 30rpx;
+}
+page{
+  background-color: rgb(228, 192, 226);
+}

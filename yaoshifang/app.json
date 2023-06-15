@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/food/food",
+    "pages/shoping/shoping",
+    "pages/about/about",
+    "pages/indexDetail/indexDetail",
+    "pages/templates/foodList/foodList.WXSS"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff1493",
+    "navigationBarTitleText": "养生堂",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ff1493",
+    "selectedColor": "#ff69b4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/ic_首页 (1).png",
+        "selectedIconPath": "/image/ic_首页.png"
+      },
+      {
+        "pagePath": "pages/food/food",
+        "text": "食疗法",
+        "iconPath": "/image/茶水间-01 (1).png",
+        "selectedIconPath": "/image/茶水间-01.png"
+      },
+      {
+        "pagePath": "pages/shoping/shoping",
+        "text": "购物",
+        "iconPath": "/image/ic_购物车 (1).png",
+        "selectedIconPath": "/image/ic_购物车.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "/image/我的小 (1).png",
+        "selectedIconPath": "/image/我的小.png"
+      }
+    ]
+  },
+  "style": "v2"
+}

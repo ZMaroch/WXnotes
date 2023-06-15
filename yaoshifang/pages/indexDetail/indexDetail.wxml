@@ -1,0 +1,4 @@
+<!--pages/indexDetail/indexDetail.wxml-->
+<view class="title">{{info.title}}</view>
+<image src='{{info.image}}'></image>
+<view>{{info.detail}}</view>

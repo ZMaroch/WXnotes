@@ -1,0 +1,71 @@
+/* pages/food/food.wxss */
+.fenlei{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20rpx;
+  background-color: #ffffff;
+}
+
+.fenlei-item{
+  width:25%;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  height: 130rpx;
+}
+.fenlei image{
+  width:50%;
+  height:60%;
+}
+
+.shop-info{
+  margin-bottom: 20rpx;
+  background: #fff;
+  display: flex;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.shop-img image{
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.shop-text .title{
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.shop-text .detail{
+  font-size: 26rpx;
+  color: #5f5f5f;
+  line-height: 38rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.other{
+  display: flex;
+  position: absolute;
+  bottom: 50rpx;
+}
+
+.other .money{
+  color: #ee2020;
+  font-size: 24rpx;
+  margin-right: 30rpx;
+}
+
+.other .num{
+  color: #818181;
+  font-size: 24rpx;
+}
+/* @import'../../templates//foodList/foodList.wxss'; */
+/* .fenlei-item image{
+  width: 25%;
+  height: auto;
+} */

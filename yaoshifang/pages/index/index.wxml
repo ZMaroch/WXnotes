@@ -1,0 +1,96 @@
+<!--pages/index/index.wxml-->
+<!--
+<swiper class="banner" autoplay="true" circular="true"
+indicator-dots="true" indicator-color="#ff69b4" indicator-active-color="#ff1493" bindchange="swiperchange" current="0">
+    <swiper-item>
+        <image src="/image/ic_购物车 (1).png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/茶水间-01 (1).png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/我的小 (1).png"></image>
+    </swiper-item>
+</swiper>
+<view class="bannerBox">
+  <swiper class="banner" autoplay="true" circular="true" ></swiper>
+  <view class='bannernum'>{{currentIndex+1}}/3</view>
+</view>
+-->
+<view class="bannerBox">
+  <swiper class="banner" autoplay="true" circular="true"bindchange="swiperchange" current="0">
+    <swiper-item wx:for="{{bannerArr}}" wx:key="index">
+      <image src="{{item.image}}"></image>
+      <view class="banner-info">{{item.title}}
+        <view class="bannernum">{{currentIndex + 1}}/5</view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!--每日一册-->
+<view class="content">
+      <view class="item">
+      <image src="../../image/ic_购物车 (1).png"></image>
+      <view>每日一测</view>
+      </view>
+      <view class="item">
+      <image src="../../image/ic_首页 (1).png"></image>
+      <view>每日食谱</view>
+      </view>
+</view>
+
+<!--列表数据信息-->
+<!--
+<view class="list">
+  <view class="title">标题</view>
+  <view class="wrapper">
+    <image src="../../image/茶水间-01 (1).png"></image>
+    <view class="info">
+      <view class="desc">描述信息</view>
+      <view class="readynum"><text>1234</text>阅读</view>
+    </view>
+  </view>
+</view>   
+-->
+<!-- <view class="list" wx:for="{{listArr}}" wx:key="index">
+  <view class="title">{{item.title}}</view>
+  <view class="wrapper">
+    <image src="{{item.image}}"></image>
+    <view class="info">
+      <view class="desc">{{item.desc}}</view>
+      <view class="readynum"><text>{{item.readNum}}</text>阅读</view>
+    </view>
+  </view>
+</view>  -->
+
+<!--点击进入详情页
+    1.导航组件 navigator
+    2.小程序api 触发点击跳转
+    页面之间传递参数
+    url地址栏传递
+    对应的界面ONLOAD函数options接受变量
+-->
+<!-- <view class="list" wx:for="{{listArr}}" wx:key="index">
+  <navigator url='../indexDetail/indexDetail?mark={{item.id}}'>
+      <view class="title">{{item.title}}</view>
+     <view class="wrapper">
+        <image src="{{item.image}}"></image>
+        <view class="info">
+         <view class="desc">{{item.desc}}</view>
+          <view class="readynum"><text>{{item.readNum}}</text>阅读</view>
+        </view>
+      </view>
+  </navigator>
+</view> -->
+
+<!-- 点击list通过api跳转 -->
+<view class="list" wx:for="{{listArr}}" wx:key="index" bindtap="goDetail" data-id="{{item.id}}">
+     <view class="title">{{item.title}}</view>
+     <view class="wrapper">
+        <image src="{{item.image}}"></image>
+        <view class="info">
+          <view class="desc">{{item.desc}}</view>
+          <view class="readynum"><text>{{item.readNum}}</text>阅读</view>
+        </view>
+      </view>
+</view> 

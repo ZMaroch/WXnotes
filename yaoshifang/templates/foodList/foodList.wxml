@@ -1,0 +1,15 @@
+<!-- <template name="foodList">
+      <view class="shop-info">
+        <view class="shop-img">
+            <image src="../../image/ic_购物车 (1).png"></image>
+        </view>
+        <view class="shop-text">
+            <view class="title">名字</view>
+            <view class="detail">描述</view>
+              <view class="other">
+                <view class="money">￥200</view>
+                <view class="num">2834人付款</view>          
+              </view>
+        </view>
+      </view>  
+</template> -->
